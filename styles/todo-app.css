@@ -345,7 +345,6 @@ body {
  @media(max-width: 450px) {
    body {
     margin-top: 40px;
-    background-color: rgb(245, 246, 250);
    }
 
    .container {
