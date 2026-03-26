@@ -1,0 +1,95 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 45px;
+  
+  z-index: 100;
+
+  background-color: var(--container-bg);
+  border-bottom: 1px solid var(--border-color);
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 20px;
+}
+
+.task-image {
+  height: 24px;
+  filter: invert(0%);
+  transition: filter 0.2s ease;
+}
+
+.task-image:hover {
+  transform: rotate(10deg) scale(1.1);
+}
+
+.dark-mode .task-image {
+  filter: invert(100%);
+}
+
+.brand-name {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: var(--heading-color);
+  transition: color 0.2s ease;
+}
+
+.brand-name span {
+  color: #4CAF50;
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.dark-mode-button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.dark-mode-image {
+  height: 24px;
+  filter: invert(0%);
+  transition: filter 0.2s ease;
+}
+
+.dark-mode .dark-mode-image {
+  filter: invert(100%);
+}
+
+
+@media(max-width: 450px) {
+  .header {
+    height: 40px;
+  }
+
+  .brand-name {
+    font-size: 0.95rem;
+  }
+
+  .task-image, .dark-mode-image {
+    height: 20px;
+  }
+
+  .left-section {
+   margin-left: 15px;
+  }
+
+  .right-section {
+    margin-right: 15px;
+  }
+}
+
+
