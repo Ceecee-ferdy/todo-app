@@ -52,7 +52,7 @@ Built with vanilla JavaScript, it focuses on simplicity, speed, and a smooth use
 
 ## 🔗 Live Demo
 
-(Add your link here later)
+[Click here to view the app](https://ceecee-ferdy.github.io/todo-app/)
 
 ---
 
