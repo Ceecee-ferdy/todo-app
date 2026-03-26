@@ -90,6 +90,10 @@
   .right-section {
     margin-right: 15px;
   }
+
+  .task-image:hover {
+    transform: none;
+  }
 }
 
 
