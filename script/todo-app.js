@@ -136,9 +136,8 @@ document.querySelector('.js-dark-mode-toggle')
 
             textElement.onkeydown = (event) => {
               if(event.key === 'Enter') {
-
-                const tickButton = container.querySelector('.js-tick-button')
-                saveEdit(tickButton, index)
+                event.preventDefault();
+                document.execCommand('insertLineBreak');
               }
             }
             
@@ -188,7 +187,7 @@ document.querySelector('.js-dark-mode-toggle')
 
             isEditing = false;
 
-           todoList[index].text = textElement.textContent.trim();  // save edited text
+           todoList[index].text = textElement.innerHTML.trim();  // save edited text
             saveTodos();
             renderTodoPage();
          }
