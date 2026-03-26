@@ -1,13 +1,13 @@
 # Ceetiq — Smart Todo Manager
 
 Ceetiq is a clean and modern todo web app designed to help users stay organized and productive.
-Built with vanilla JavaScript, it focuses on simplicity, speed, and a smooth user experience.
+Built with vanilla JavaScript, it focuses on simplicity, speed and a smooth user experience.
 
 ---
 
 ## 🚀 Features
 
-* ✅ Add, edit, and delete tasks
+* ✅ Add, edit and delete tasks
 * ✏️ Inline editing
 * 🌙 Dark mode (with saved preference)
 * 🧹 Clear completed tasks
